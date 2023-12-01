@@ -72,7 +72,7 @@ func init() {
 func registerBlockState(s blockState) {
 	h := stateHash{name: s.Name, properties: hashProperties(s.Properties)}
 	if _, ok := stateRuntimeIDs[h]; ok {
-		panic(fmt.Sprintf("cannot register the same state twice (%+v)", s))
+		panic(fmt.Sprintf("he it cant make register 2 time inside 1 time sory (%+v.)", s))
 	}
 	if _, ok := blockProperties[s.Name]; !ok {
 		blockProperties[s.Name] = s.Properties
